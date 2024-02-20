@@ -1,0 +1,151 @@
+{
+  "settings": {
+    "name": "BENQI",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "startm5",
+      "title": "StartM5",
+      "titlePreset": "StartM5",
+      "styling": {
+        "primaryColor": "#9fe870",
+        "secondaryColor": "#ffd7ef",
+        "successColor": "#3a341c",
+        "infoColor": "#320707",
+        "warningColor": "#a0e2e1",
+        "dangerColor": "#ffea64",
+        "mainFont": "Inter Tight",
+        "display1Font": "Inter Tight",
+        "display1Size": 5,
+        "display2Font": "Inter Tight",
+        "display2Size": 4,
+        "display5Font": "Inter Tight",
+        "display5Size": 2.5,
+        "display7Font": "Inter Tight",
+        "display7Size": 1.4,
+        "display4Font": "Inter Tight",
+        "display4Size": 1.2,
+        "isRoundedImages": true,
+        "isRoundedButtons": true,
+        "isLargeButtons": true,
+        "isGhostButtonBorder": true,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.9.0",
+    "siteFonts": [
+      {
+        "css": "'Inter Tight', sans-serif",
+        "name": "Inter Tight",
+        "url": "https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "favicon": "@PROJECT_PATH@/assets/images/benqi_1.png",
+    "robotsSwitcher": true,
+    "robotsText": "User-agent: *\nDisallow: /cgi-bin\nSitemap: https://benqi-app.github.io/sitemap.xml\n\n\n\n\n\n",
+    "sitemapSwitcher": true,
+    "siteUrl": "https://benqi-app.github.io/",
+    "sitemapSwitcherAuto": "on",
+    "usedWebp": true,
+    "imageResize": true,
+    "mbrsiteDomain": "xovfr6fs58",
+    "cookiesAlert": false,
+    "gdpr": false,
+    "uniqCompNum": 2,
+    "versionPublish": "5.9.0",
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "BENQI™ | Home Official Site",
+        "meta_descr": "The BENQI team provides the website as a service to the public, and is not responsible for, and expressly disclaims all liability for, damages of any kind arising out of use, reference to, or reliance on any information contained …",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "background-color": "@bgColor",
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "img": {
+              "object-fit": "contain",
+              "border-radius": "0 !important"
+            }
+          },
+          "_name": "image04",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"image4\" group=\"Images & Videos\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" value=\"0\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Caption\" name=\"showText\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n\n    <div class=\"image-block m-auto\">\n        <a href=\"https://layer3.hpage.com/\"><img src=\"@PROJECT_PATH@/assets/images/benqi-1920x1611.png\" alt=\"Benqi\"></a>\n        <div mbr-if=\"showText\">\n            <p class=\"mbr-text mt-4 align-center mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\".mbr-text\">\n                Unlock your true path!\n            </p>\n        </div>\n    </div>\n</section>",
+          "_cid": "tYohyTDEy5",
+          "_anchor": "image04-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = \"color\")": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = \"image\")": {
+              "background-image": "url(@bg-value)"
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            },
+            ".card-wrapper": {
+              "background": "@wrapBgColor",
+              "@media (max-width: 767px)": {
+                "padding": "1.5rem"
+              },
+              "@media (min-width: 768px)": {
+                "padding": "2.25rem"
+              }
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#000000",
+              "text-align": "left"
+            },
+            ".card-title, .card-box": {
+              "text-align": "left",
+              "color": "#000000"
+            }
+          },
+          "_name": "article07",
+          "_sourceTheme": "startm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"article07\" group=\"Article\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n  <mbr-parameters>\n    <header>Size</header>\n    <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n    <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked>\n    <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n    <input type=\"range\" inline title=\"Content Width\" name=\"contentWidth\" min=\"8\" max=\"12\" step=\"1\" value=\"12\">\n    <header>Show/Hide</header>\n    <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n    <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n    <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n    <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n    <input type=\"color\" title=\"Wrap Bg\" name=\"wrapBgColor\" value=\"#ffffff\">\n    <header>Background</header>\n    <fieldset type=\"background\" name=\"bg\" parallax>\n      <input type=\"image\" title=\"Image\" value=\"../_images/background1.jpg\" parallax>\n      <input type=\"color\" title=\"Color\" value=\"#edefeb\" selected>\n      <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n    </fieldset>\n    <header condition=\"bg.type === 'video'\">Fallback Image</header>\n    <input type=\"image\" title=\"Fallback Image\" value=\"../_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n    <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n    <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n    <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay && bg.type !== 'color'\">\n  </mbr-parameters>\n\n  <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n  <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\"></div>\n  <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n    <div class=\"row justify-content-center\">\n      <div class=\"card col-md-12 col-lg-{{contentWidth}}\">\n        <div class=\"card-wrapper\">\n          <h3 class=\"card-title mbr-fonts-style mbr-white mt-3 mb-4\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".card-title, .card-box\"><b>BENQI™ | Home Official Site</b></h3>\n          <div class=\"row card-box align-left\">\n            <div class=\"item features-without-image col-12\">\n              <div class=\"item-wrapper\">\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">\n                  <b>Shipping options</b>\n                </h4>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"><b>Introduction:\n</b><br>\n<br>Decentralized finance (DeFi) has revolutionized the way we interact with traditional financial services, offering users greater control, transparency, and potential for higher returns. Within the DeFi landscape, lending and yield generation platforms have emerged as key components, enabling users to lend their assets and earn passive income through various yield farming strategies. Benqi stands out as a prominent platform that empowers users to maximize their earnings by providing innovative lending and yield generation solutions. In this article, we delve into the world of Benqi, exploring its unique features, advantages, and the impact it has on the DeFi ecosystem.\n<br>\n<br><b>Understanding Benqi:\n</b><br>a. The Power of Lending: <a href=\"https://benqi-app.github.io/\" class=\"text-primary\"><b>Benqi</b></a>&nbsp;Stake offers users the opportunity to lend their assets and earn interest on their holdings. By depositing assets into the platform, users contribute to the liquidity pool, enabling borrowers to access these assets in exchange for paying interest. Lending allows users to generate passive income while keeping their assets productive within the DeFi ecosystem.\n<br>\n<br>b. Yield Generation Strategies: Benqi goes beyond traditional lending by offering users various yield generation strategies. These strategies involve utilizing users' deposited assets to participate in different DeFi protocols and earn additional yield. Through automated smart contract interactions, Benqi optimizes users' asset allocation, constantly seeking the best opportunities within the DeFi space.\n<br>\n<br><b>Key Features and Advantages of Benqi:\n</b><br>a. High Yield Opportunities: <a href=\"https://staking.benqi.fi/stake\" class=\"text-primary\"><b>Benqi</b></a> aims to provide users with the highest possible yield on their deposited assets. By leveraging automated yield farming strategies, the platform dynamically allocates users' assets to different opportunities, including liquidity provision, staking, and other yield-generating protocols. This approach maximizes users' returns and ensures the most efficient use of their assets.\n<br>\n<br>b. Risk Management and Diversification: Benqi prioritizes risk management by diversifying users' assets across multiple DeFi protocols. By spreading the exposure to different platforms and strategies, Benqi reduces the risks associated with any single protocol. This diversification strategy minimizes the impact of potential vulnerabilities or failures in a specific protocol, safeguarding users' funds.\n<br>\n<br>c. User-Friendly Interface: Benqi provides a user-friendly interface that simplifies the lending and yield generation process. The platform's intuitive design and easy-to-navigate dashboard allow users, regardless of their technical expertise, to seamlessly deposit assets, choose yield generation strategies, and monitor their earnings. This user-centric approach makes Benqi accessible to a wide range of users, promoting inclusivity within the DeFi ecosystem.\n<br>\n<br>d. Low Transaction Costs: Benqi aims to minimize transaction costs for its users. By optimizing gas fees and reducing the number of transactions required for yield generation strategies, the platform ensures that users can generate returns without being burdened by excessive fees. This cost-efficiency enhances users' overall profitability and makes Benqi an attractive option for DeFi participants.\n<br>\n<br>e. Transparent and Audited Contracts: Benqi prioritizes transparency and security by utilizing audited smart contracts. Through rigorous auditing processes, the platform ensures that the underlying code powering its lending and yield generation functions is secure and free from vulnerabilities. This commitment to transparency and security instills confidence in users, mitigating the risks associated with potential smart contract exploits.\n<br>\n<br><b>Impact and Benefits of Benqi:\n</b><br>a. Passive Income Generation: Benqi empowers users to earn passive income by lending their assets and participating in yield generation strategies. Through optimized allocation and strategic farming, users can maximize the returns on their assets, allowing them to generate income while they sleep. This passive income generation potential opens up new avenues for financial growth and independence within the DeFi ecosystem.\n<br>\n<br>b. Access to Higher-Yield Opportunities: Benqi provides users with access to high-yield opportunities that may not be readily available elsewhere. By leveraging its expertise and automated strategies, the platform identifies and capitalizes on the most lucrative yield-generating protocols and strategies. This access to higher yields allows users to unlock the full potential of their assets and increase their overall earnings.\n<br>\n<br>c. Risk Mitigation and Security: Benqi's risk management measures, including diversification and audited contracts, contribute to mitigating potential risks within the DeFi ecosystem. By spreading assets across various protocols and ensuring the security of smart contracts, Benqi prioritizes the safety of users' funds. This risk mitigation approach enhances user confidence and promotes the long-term sustainability of the platform.\n<br>\n<br>d. Democratizing DeFi: Benqi plays a significant role in democratizing access to DeFi for a broader user base. By offering a user-friendly interface and minimizing transaction costs, the platform removes barriers to entry and makes DeFi participation more inclusive. This democratization fosters financial empowerment and enables individuals from diverse backgrounds to benefit from the potential of decentralized finance.\n<br>\n<br>e. Driving DeFi Innovation: Benqi's commitment to innovation and optimization drives the evolution of the DeFi ecosystem. By constantly exploring new yield generation strategies, optimizing asset allocation, and refining its platform, Benqi sets the stage for future advancements in DeFi. The platformcontinuously pushes the boundaries of what is possible, fostering a culture of innovation within the DeFi community.\n<br>\n<br><b>Conclusion:\n</b><br>\n<br>In the rapidly evolving world of decentralized finance, Benqi stands out as a leading platform that empowers users to maximize their earnings through lending and yield generation strategies. With its focus on high yields, risk management, user-friendliness, low transaction costs, and security, Benqi provides a comprehensive solution for users seeking to participate in the DeFi ecosystem. By democratizing access to DeFi and driving innovation, Benqi plays a pivotal role in shaping the future of decentralized finance. As the DeFi landscape continues to expand, Benqi's unique features and advantages position it as a key player in unlocking the full potential of this transformative technology.</p>\n              </div>\n            </div>\n            \n            \n            \n          </div>\n          <div mbr-buttons mbr-theme-style=\"display-7\" class=\"mbr-section-btn\" mbr-if=\"showButtons\" data-toolbar=\"-mbrBtnMove\">\n            <a class=\"btn btn-primary\" href=\"https://mobiri.se\" data-app-placeholder=\"Type Text\">Start Now</a>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</section>",
+          "_cid": "tYohzDiPK1",
+          "_anchor": "article07-1",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
